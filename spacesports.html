@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPORTSSPOT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #projectlogo {
+         animation: logo 10s linear infinite;
+         transform: rotate(10deg);
+        }
+
+        @keyframes  logo{
+
+            0%{
+                transform:Rotate(0deg);
+
+            }
+            100%{
+                transform:Rotate(360deg);
+        }
+        }
+
+
+        .navbar{
+            width: 100%;
+            height: 90px;
+            background-color: white;
+             /* border-radius: 2vw; */
+        }
+        .navbar nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .navbar  ul li {
+            display: inline-block;
+            
+        }
+        .navbar  .name  a{
+            text-decoration: none;
+            padding: 10px;
+            color: rgb(39, 39, 124); 
+            font-size: 1.5vw;
+            transition: .8s ease
+
+        }
+        .navbar nav .name a:hover{
+            color: black;
+            font-size: 1.8vw;
+            background-color: rgb(196, 191, 191);
+            border-radius: 20px;
+        }
+         .logo img {
+            position: relative;
+            border-radius: 60%;
+            width: 80px;
+            right: 20px;
+            top: 4px;
+            color: aqua;
+        }
+        .logo img:hover{
+            
+            background-color: rgb(204, 201, 201);
+            transform: translate(-50%, -50%);
+        }
+        /* .navbar nav .name{
+            
+            top: 10px;
+        } */
+         .login a{
+            text-decoration: none; 
+            font-size: 25px; 
+            background-color:whitesmoke;
+            padding: 10px ;
+            border-radius: 10px;
+            cursor: pointer;
+            /* transition: all 5s; */
+        }
+        .login:hover{
+            border-radius: 20px;
+            background: none;
+            background-color: rgb(196, 191, 191);
+            transform: scale(1.2);
+            transition: .8s ease;
+        }
+        
+
+        .navbar nav .cart a{
+            left: 10px;
+            top: 18px;
+            font-size: xx-large;
+
+        }
+
+        @media (max-width: 480px) {
+    .navbar .name a {
+        font-size: 0.9em; /* Even smaller font size for very small devices */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding: 10px 0;
+    }
+    .cart img{
+        height: 40vh;
+    }
+}
+
+
+        .part1{
+            width: 100%;
+            /* max-height: 50vh; */
+            height: 540px;
+            animation-name:sportsimages ;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            background-image: url(sportsimg6.jpg);
+            background-size: cover;
+            position: relative;
+            margin-bottom: 40px;
+            background-repeat: no-repeat;
+
+        }
+        @keyframes sportsimages{
+        0%{
+           background-image: url(sportsimg1.jpg);
+           width: 100%;
+            height: 540px;
+        }
+        25%{
+        background-image: url(sportsimg2.jpg);
+        width: 100%;
+            height: 540px;
+        }
+        50%{
+        background-image: url(sportsimg3.jpg);
+        width: 100%;
+            height: 540px;
+        }
+        75%{
+        background-image: url(sportsimg4.jpg);
+        width: 100%;
+            height: 540px;
+        }
+        100%{
+            background-image: url(sportsimg6.jpg);
+            width: 100%;
+            height: 540px;
+        }
+        }
+
+        
+        
+        .part2{
+            width: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            position: relative;
+            background-color: black;
+            /* border-radius: 7vw; */
+        }
+        .part2 h1{
+            color: rgb(22, 22, 22) ;
+            text-align: center;
+            justify-content: center;
+            padding: 50px 49px 55px 59px;
+        
+         }
+
+         .part2 {
+            position: relative;
+            font-family: sans-serif;
+            font-size: 80%;
+            letter-spacing: 4px;
+            background: linear-gradient(30deg, #000,#e7eaeb,#000);
+            overflow: hidden;
+            background-size: 100%;
+        }
+ 
+        /* .card-container {
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            height: 500px;
+            background-color: white;
+            width: 100%;*/
+                   
+
+.card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Always three columns */
+            gap: 30px;
+            padding: 20px;
+            width: 90%; /* Adjust based on preference */
+            max-width: 1200px; /* Container max-width */
+            margin: auto; /* Centering the container */
+            
+        }
+        .card {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            overflow: hidden; /* Keeps the image within the borders of the card */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            transform: perspective(1000px) rotateY(0deg) scale(1);
+            transform-origin: center;
+        }
+
+        .card:hover {
+            transform: perspective(1000px) rotateY(5deg) scale(1.05);
+            box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 60vh; 
+            /* display: block;  */
+        }
+        .card h3 {
+            margin: 10px 0; /* Added margin for spacing */
+            color: #333;
+        }
+        .card p {
+            color: #666;
+            padding: 0 20px 20px; /* Padding for text content */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .card-container  {
+                grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card-container  {
+                grid-template-columns: 1fr; /* One column on very small screens */
+            }
+        }
+
+
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .footer div {
+            margin-bottom: 20px;
+        }
+        .footer h3 {
+            color: #f8f8f8;
+        }
+        .footer p, .footer a {
+            color: #ccc;
+            font-size: 14px;
+            line-height: 1.6;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .footer p {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .part1{
+                /* height: 200px; */
+                max-height: 80vh;
+                width: 220px;
+
+            }
+            @keyframes sportsimages{
+        0%{
+           background-image: url(sportsimg1.jpg);
+           width: 100%;
+            height: 540px;
+        }
+        25%{
+        background-image: url(sportsimg2.jpg);
+        width: 100%;
+            height: 540px;
+        }
+        50%{
+        background-image: url(sportsimg3.jpg);
+        width: 100%;
+            height: 540px;
+        }
+        75%{
+        background-image: url(sportsimg4.jpg);
+        width: 100%;
+            height: 540px;
+        }
+        100%{
+            background-image: url(sportsimg6.jpg);
+            width: 100%;
+            height: 540px;
+        }
+        }
+
+        }
+
+       
+
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+           <div class="logo">
+            <img id="projectlogo" src="projectlogo.png" width="50px">
+           </div>
+           <div class="name">
+
+            <ul>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="indoor.html">In Door</a></li>
+                <li><a href="outdoornew.html">Out Door</a></li>
+                <li><a href="Support.html">Support</a></li>
+
+            </ul>
+           </div>
+           <div class="login">
+            <a href="login.html"><i class="fa-solid fa-user"></i> Login</a>
+           </div>
+           <div class="cart">
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+           </div>
+        </nav>
+    </div>
+    <div class="part1">
+        <!-- <img src="sportsimg1.jpg" alt="three jersey"> -->
+    </div>
+    
+    <div class="part2">
+        
+        <h1> OUR EXCLUSIVE PRODUCTS AT THE TREND</h1>
+
+        <h1>RUSH TO THE OFFER ORELSE OTHER WILL RUSH YOUR OFFERS</h1>
+    </div>
+        
+    
+     <div class="card-container">
+        <div class="card">
+            <img src="homepagecard1.jpg" alt="Card 1 Image">
+            <h3>DOMINATOR3.0</h3>
+            <p>RS:1660</p>
+            <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+        </div>
+        <div class="card">
+            <img src="homepagecard2.jpg" alt="Card 2 Image">
+            <h3>GYM-CLOVES</h3>
+            <p>RS:1020</p>
+            <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+
+        </div>
+        <div class="card">
+            <img src="homepagecard3.jpg" alt="Card 3 Image" width="575px" height="671px">
+            <h3>SPORTHO</h3>
+            <p>RS:2100</p>
+            <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+
+        </div>
+        <div class="card">
+            <img src="homepagecard4.jpg" alt="Card 4 Image">
+            <h3>THROWBALL</h3>
+            <p>RS1355</p>
+            <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+
+        </div>
+        <div class="card">
+            <img src="homepagecard5.jpg" alt="Card 5 Image">
+            <h3>BASKETBALL</h3>
+            <p>RS:850</p>
+            <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+
+        </div>
+        <div class="card">
+            <img src="homepagecard6.jpg" alt="Card 6 Image">
+            <h3>VOLLEYBALL</h3>
+            <p>RS:900</p>
+            <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div>
+            <h3>CORPORATE OFFICE</h3>
+            <p><i class="fa-solid fa-location-dot"></i>  392, Leather Complex, Kapurthala Road, Jalandar</p><br>
+            <p><i class="fa-solid fa-phone"></i> +91-9115497521</p><br>
+            <p><i class="fa-solid fa-truck-fast"></i> For Order Related & General Queries Contact: +91 9115497521</p><br>
+            <p><i class="fa-solid fa-envelope"></i>Email: <a href="mailto:support@nivia.in">support@nivia.in</a> / <a href="mailto:contact@nivia.in">contact@nivia.in</a></p>
+        </div>
+        <div>
+            <h3>ABOUT US</h3>
+            <a href="#">About Us</a><br>
+            <a href="#">Contact</a><br>
+            <a href="#">Terms And Conditions</a><br>
+            <a href="#">Privacy Policy</a><br>
+            <a href="#">Exchange & Return Policy</a><br>
+            <a href="#">Track Order</a>
+        </div>
+        <div>
+            <h3>NIVIA AFFILIATIONS</h3>
+            <a href="#">AIFF</a><br>
+            <a href="#">ISL</a><br>
+            <a href="#">Bhutan Football Federation</a><br>
+            <a href="#">Srilankan Football Federation</a><br>
+            <a href="#">BFI</a>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

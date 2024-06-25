@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* background-image: ; */
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(252, 167, 88);
+
+        }
+
+        .grid1{
+            display: grid;
+            /* background-color:royalblue; */
+            border: 10px solid lightpink;
+            /* grid-template-columns: auto auto; */
+            /* or 100px 300px auto */
+            /* padding:10px; */
+            gap:20%;
+            /* grid-template-rows: auto auto; */
+        
+        }
+
+        .nav{
+            
+            width:100%;
+            height:10vh;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            /* padding:0 5%; */
+            position:relative;
+            z-index: 9999;
+   
+            }
+        nav{
+            background-color:rgb(161, 158, 158);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        nav li{
+            display: inline-block;
+            margin: 0 10px;
+
+        }
+        nav ul li a{
+            text-decoration: none;
+            font-size: 18px;
+            text-decoration: none;
+            color: whitesmoke;
+            border-radius: 5px;
+            padding: 5px;
+
+        }
+        nav ul li a:hover{
+            background-color: darkorchid;
+        }
+        .logo{
+            text-decoration: none;
+            font-size: 40px;
+            text-decoration: none;
+            color:rgb(226, 250, 7);
+            text-decoration: wavy;
+    
+    
+        }
+
+        .box1{
+            display: grid;
+            /* background-color: rgb(33, 238, 6); */
+            /* border: 10px solid  black; */
+            grid-template-columns: 38% ;
+            justify-content: space-around;
+            /* /* or 100px 300px auto * */
+            padding:10px;
+             gap:20%; 
+
+        }
+
+        .box2{
+            display: grid;
+            /* background-color: rgb(33, 238, 6); */
+            /* border: 10px solid  black; */
+            grid-template-columns: 38% ;
+            justify-content: center;
+            /* /* or 100px 300px auto * */
+            padding:10px;
+             gap:20%; 
+
+        }
+
+        select{
+            display: flex;
+            text-align: justify;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="nav">
+        <nav>
+
+            <select>
+                <optgroup label="LOCATION YOU WANT">
+                <!-- <option>LOCATION YOU WANT</option> -->
+                <option>Madurai</option>
+                <option >Chennai</option>
+                <option >Ooty</option>
+                <option>Kodaikanal</option>
+                <!-- </optgroup> -->
+                <!-- <hr> -->
+                <!-- <optgroup label="course 2"> -->
+                <option>Theni</option>
+                <option>Dindugal</option>
+                <option>Trichy</option>
+                <option>Salem</option>
+                </optgroup>
+            </select>
+    
+            <div class="logo">REALESTATE</div>
+            
+            <ul>
+                <li><a class="active" href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SERVICE</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">FEEDBACK</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="grid1">
+        <div class="box1">
+            <image src="https://source.unsplash.com/random/200x200?sig=4"> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam esse ad nostrum, omnis id amet magnam quisquam nemo, magni aut quidem? Magni in doloribus possimus eaque maiores odio laudantium nam, quidem illo. Molestias, necessitatibus. Quisquam facere aperiam qui autem deleniti.</p>
+                <br>
+                
+                    <!-- <button>Button</button> -->
+                      
+            </div> 
+
+
+      
+    </div>
+    <div class="grid1">
+        <div class="box2">
+            <image src="https://source.unsplash.com/random/200x200?sig=6"> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam esse ad nostrum, omnis id amet magnam quisquam nemo, magni aut quidem? Magni in doloribus possimus eaque maiores odio laudantium nam, quidem illo. Molestias, necessitatibus. Quisquam facere aperiam qui autem deleniti.</p>
+                <br>
+                
+                    <!-- <button>Button</button> -->
+                      
+            </div>
+    </div>
+</body>
+</html>

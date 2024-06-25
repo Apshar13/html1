@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support Page</title>
+<link rel="stylesheet" href="styles.css">
+
+    <style>
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 250, 241);
+}
+.bg img{
+    width:100%;
+    height:250px;
+    overflow: hidden;
+    border-radius: 0 0 8px 8px;
+}
+.header {
+    width: 500vw;
+    height: 70vh;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.header-image {
+    max-width: 500vw;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-container {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch; */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 50px;
+}
+
+.card {
+    width: 200px;
+    margin: 20px 5px 60px 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.card:hover {
+    color: #666;
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px black;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h3 {
+    color: #333;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 0.9em;
+}
+
+@media (max-width: 800px) {
+    .card {
+        width: 45%;
+    }
+
+
+
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 90%;
+    }
+}
+
+
+    </style>
+
+</head>
+<body>
+    <div class="bg">
+        <img src="DSC08891 1 min 11 (1).png" alt="Support Header Image" class="header-image">
+    </div>
+
+    <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="supportcard1.jpg" alt="Service Image">
+            <h3>RETURN AND REFUND</h3>
+            <p>Description here for card 1...</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="supportcard2.jpg" alt="Service Image">
+            <h3>SHIPPING AND DELIVERY</h3>
+            <p>Description here for card 2...</p>
+        </div>
+        <!-- Adivnal cards (up to 8 total) -->
+        <div class="card">
+            <img src="supportcard3.jpg" alt="Service Image">
+            <h3>INSTALLATION AND SERVICES</h3>
+            <p>Description here for card 3...</p>
+        </div>
+        <div class="card">
+            <img src="supportcard4.jpg" alt="Service Image">
+            <h3>ONLINE ORDER</h3>
+            <p>Description here for card 4...</p>
+        </div>
+        <div class="card">
+            <img src="supportcard5.jpg" alt="Service Image">
+            <h3>REPLACEMENT AND EXCHANGE</h3>
+            <p>Description here for card 5...</p>
+        </div>
+        <div class="card">
+            <img src="supportcard6.jpg" alt="Service Image">
+            <h3>COOPERATE QURIES</h3>
+            <p>Description here for card 6...</p>
+        </div>
+        <div class="card">
+            <img src="supportcard7.jpg" alt="Service Image">
+            <h3>EXTERNAL BRANDS</h3>
+            <p>Description here for card 7...</p>
+        </div>
+        <div class="card">
+            <img src="supportcard8.jpg" alt="Service Image">
+            <h3>MY ACCOUNT</h3>
+            <p>Description here for card 8...</p>
+        </div>
+        <!-- <div class="card">
+            <img src="supportcard9.jpg" alt="Service Image">
+            <h3>WARRANTY</h3>    
+            <p>Description here for card 9...</p>
+        </div> -->
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{ */
+          
+           
+        /* } */
+      
+        .gr1{
+            display: grid;
+            background-color: rgb(255, 102, 0);
+            border: 10px solid darkmagenta;
+            grid-template-columns: auto auto auto auto;
+            /* or 100px 300px auto  */
+            padding:10px;
+            gap:10%;
+            /* grid-template-rows: auto auto; */
+        }
+        .gr2{
+            display: grid;
+            background-color:royalblue;
+            border: 10px solid lightpink;
+            grid-template-columns: auto auto;
+            /* or 100px 300px auto */
+            padding:10px;
+            gap:20%;
+            /* grid-template-rows: auto auto; */
+        }
+        .gr3{
+            display: grid;
+            background-color: rgb(33, 238, 6);
+            border: 10px solid  black;
+            grid-template-columns: 38% ;
+            justify-content: center;
+            /* /* or 100px 300px auto * */
+            padding:10px;
+             gap:20%; 
+            /* grid-template-rows: auto auto; */
+        }
+       
+        .box1{
+            background-color: beige;
+            padding: 10px;
+            /* margin: 10px; */
+        }
+        .box2{
+            background-color: beige;
+            padding: 10px;
+            /* margin: 10px; */
+        }
+        .box3{
+            background-color: beige;
+            padding: 10px;
+            /* margin: 10px; */
+        }
+        .box4{
+            background-color: beige;
+            padding: 10px;
+            
+            /* margin: 10px; */
+        }
+        .box5{
+            background-color: beige;
+            padding: 10px;
+
+            
+            /* margin: 10px; */
+        }
+        .topnav{
+            overflow: hidden;
+            background-color:grey;
+        }
+        .topnav a{
+            float:left;
+            display: flex;
+            /* justify-content: space-around; */
+            color:#f2f2f2;
+            text-align:center;
+            padding: 10px;
+             text-decoration:none; 
+            font-size: 17px;
+        }
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            }
+
+        .topnav a.active {
+             background-color: #04AA6D;
+             color: white;
+            }
+
+            .gr2 .box1{
+                display: flex;
+            }
+
+            .gr2 .box1 p{
+                margin: 20px;
+            }
+
+            .gr2 .box1 button{
+                margin: 20px;
+                
+            }
+
+            .gr2 .box2 p{
+                margin: 10px;
+            }
+
+            .gr2 .box2{
+                display: flex;
+                
+            }
+
+            .gr3 .box1{
+                display: flex;
+            }
+            .gr3 .box1 p{
+                margin: 30px;
+            }
+            .gr1 .box1 button{
+               text-align: center;
+               margin: 40px; 
+               padding: 10px;
+
+            }
+
+            .gr1 .box2 button{
+               text-align: center;
+               margin: 30px; 
+
+            }
+            
+            .gr1 .box4 button{
+               text-align: center;
+               margin: 30px; 
+
+            }.gr1 .box3 button{
+               text-align: center;
+               margin: 30px; 
+
+            }
+            .gr2 .box1 .btn{
+             position: absolute;
+             margin-left: 260px;
+             margin-top: 165px;
+             padding: 15px;
+            }
+            .gr2 .box1 .btn{
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                position: relative;
+                right: 150px;
+                top: 20px;
+            }
+            .gr1 .box1{
+                height: 250px;
+            }
+            .gr1 .box1 button{
+                bottom: 35px;
+                position: relative;
+
+            }
+            .gr1.box1{
+                animation: kallu 7s infinite;
+            }
+            @keyframes kallu {
+                0%{
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform: rotate(360);
+                }
+                
+            }
+    </style>
+</head>
+<body> 
+    <div class="topnav">
+        <a class="active" href="home.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </div>
+      
+        <div class="gr1">
+            <div class="box1">
+                <image src="https://source.unsplash.com/random/200x200?sig=0"> 
+                    <button>paatha kelampuu</button>
+            </div>
+            <div class="box2">
+                <img src="https://source.unsplash.com/random/200x200?sig=1" />
+                <button>vanakam noow</button>
+            </div>
+            <div class="box3">
+                <img src="https://source.unsplash.com/random/200x200?sig=2" />
+                <button>poda poothum</button>
+            </div>
+            <div class="box4">
+                <img src="https://source.unsplash.com/random/200x200?sig=3" />
+                <button>pooda dei pooda</button>
+            </div>
+        </div>
+         <div class="gr2">
+    
+            <div class="box1">
+                <image src="https://source.unsplash.com/random/200x200?sig=4"> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam esse ad nostrum, omnis id amet magnam quisquam nemo, magni aut quidem? Magni in doloribus possimus eaque maiores odio laudantium nam, quidem illo. Molestias, necessitatibus. Quisquam facere aperiam qui autem deleniti.</p>
+                    <br>
+                    
+                        <button>Button</button>
+                          
+                </div>
+            <div class="box2">
+                <image src="https://source.unsplash.com/random/200x200?sig=5" > <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quidem quas deleniti omnis consequuntur perspiciatis voluptas repellat impedit nostrum in magnam temporibus placeat excepturi fuga tenetur similique possimus ab nisi consectetur, vitae earum delectus. Beatae cumque aliquam tenetur iusto placeat?</p>
+            </div>
+        </div>
+        <div class="gr3">
+            <div class="box1"><image src="https://source.unsplash.com/random/200x200?sig=6"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem magni magnam harum dignissimos animi consequuntur iste veniam et, maxime rerum voluptates saepe aut ex enim ducimus officiis nam est asperiores vel nesciunt nobis aperiam repellat! Fuga deserunt, maiores hic amet quos incidunt qui obcaecati nobis? Odio eligendi non maiores.</p> </div>
+                
+        
+            </div>
+    
+   
+</body>
+
+</html>

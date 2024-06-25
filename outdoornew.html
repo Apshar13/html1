@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #8cc4e0, #eda12f); /* Linear gradient background */
+            color: white;
+            text-align: center;
+            padding: 20px; /* Adds padding around the content */
+        }
+        .quote {
+            margin: 20px;
+            /* background: linear-gradient(to left,#4ff340,rgb(224, 218, 218)); */
+            border-radius: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 0 10px; /* Ensures the quote has padding on smaller screens */
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px; /* Limits the maximum width of the container */
+        }
+        .card {
+            width: calc(25% - 20px); /* Subtract gap size from width */
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transform: perspective(1000px) rotateY(0deg) scale(1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative; /* Position relative for stacking context */
+            height: 250px; /* Increased height */
+        }
+        .card:hover {
+            transform: perspective(1000px) rotateY(5deg) scale(1.05);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+        }
+        .card img  {
+            width: 100%;
+            height: 100%; /* Adjusted to cover the card height */
+            /* object-fit: cover; */
+        }
+        .card h3 {
+            margin: 10px;
+            font-weight: 600;
+            position: absolute; /* Absolute positioning to ensure it appears at the bottom */
+            bottom: 10px; /* Positioned at the bottom of the card */
+            left: 10px; /* Positioned from the left side */
+            color: rgb(24, 22, 22); /* Ensures visibility over potentially dark images */
+        }
+    
+        /* Media Queries */
+        @media (max-width: 992px) {
+            .card .img  .card h3{
+                width: calc(50% - 20px); /* Adjusts to 2 cards per row */
+            }
+        }
+    
+        @media (max-width: 768px) {
+            .quote .card h3 {
+                font-size: 20px;
+            }
+            .card  {
+                height: 220px; /* Slightly smaller cards for tablet devices */
+            }
+        }
+    
+        @media (max-width: 576px) {
+            .card .img .quote .card h3 {
+                width: calc(100% - 150px); /* Full width for very small devices */
+                height: 160px; /* Reduced height for small devices */
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+
+    <div class="quote">
+        OUTDOOR GAMES 
+        THAT WE HAVE <br>
+        "Every strike brings me closer to the next home run."
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <img src="golf.jpg" alt="Golf">
+            <h3>Golf</h3>
+        </div>
+        <div class="card">
+            <img src="tennis.jpg" alt="Tennis">
+            <h3>Tennis</h3>
+        </div>
+        <div class="card">
+            <img src="swimming.jpg" alt="Swimming">
+            <h3>Swimming</h3>
+        </div>
+        <div class="card">
+            <img src="baseball.jpg" alt="Baseball">
+            <h3>Baseball</h3>
+        </div>
+        <div class="card">
+            <img src="cricket.jpg" alt="Cricket">
+            <h3>Cricket</h3>
+        </div>
+        <div class="card">
+            <img src="basketball.jpg" alt="Basketball">
+            <h3>Basketball</h3>
+        </div>
+        <div class="card">
+            <img src="rugby.jpg" alt="Rugby">
+            <h3>Rugby</h3>
+        </div>
+        <div class="card">
+            <img src="outdoorcard1.jpg" alt="Outdoor Game">
+            <h3>Outdoor Game</h3>
+        </div>
+    </div>
+    
+</body>
+</html>
